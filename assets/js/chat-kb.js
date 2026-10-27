@@ -580,7 +580,7 @@ window.TA_KB = [
    "bot",
    "respuestas"
   ],
-  "a": "<p>Podemos integrar en tu sitio web un asistente o chat para responder preguntas de tus visitantes mediante coincidencias de palabras clave. Lo desarrollamos sin mensualidades ni tarifas recurrentes por consumo de IA.</p>",
+  "a": "<p>Podemos integrar en tu sitio web un asistente o chat para responder preguntas de tus visitantes mediante coincidencias de palabras clave. Lo desarrollamos sin mensualidades ni tarifas por cada consulta.</p>",
   "next": [
    "paginas-web",
    "proyecto-guardianes",

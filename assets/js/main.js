@@ -43,6 +43,14 @@
       videos.forEach((v) => vio.observe(v));
     }
 
+    // Flotantes: «¿Preguntas?» se encoge pasado el inicio, y WhatsApp se oculta en Contacto (ya está ahí).
+    if ('IntersectionObserver' in window) {
+      const hero = document.getElementById('inicio');
+      const contacto = document.getElementById('contacto');
+      if (hero) new IntersectionObserver(([en]) => document.body.classList.toggle('lejos-del-inicio', en.intersectionRatio < 0.4), { threshold: [0, 0.4] }).observe(hero);
+      if (contacto) new IntersectionObserver(([en]) => document.body.classList.toggle('en-contacto', en.isIntersecting), { threshold: 0.25 }).observe(contacto);
+    }
+
     // Los enlaces de cada servicio preseleccionan la opción del formulario.
     const form = document.getElementById('formContacto');
     document.querySelectorAll('[data-servicio]').forEach((a) => {
