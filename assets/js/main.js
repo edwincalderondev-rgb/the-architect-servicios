@@ -50,6 +50,14 @@
       if (hero) new IntersectionObserver(([en]) => document.body.classList.toggle('lejos-del-inicio', en.intersectionRatio < 0.4), { threshold: [0, 0.4] }).observe(hero);
       if (contacto) new IntersectionObserver(([en]) => document.body.classList.toggle('en-contacto', en.isIntersecting), { threshold: 0.25 }).observe(contacto);
     }
+    // En celular los flotantes se apartan mientras bajas leyendo y vuelven al subir (el CSS lo limita a pantallas angostas).
+    let ultimaY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if (Math.abs(y - ultimaY) < 8) return;
+      document.body.classList.toggle('bajando', y > ultimaY && y > 200);
+      ultimaY = y;
+    }, { passive: true });
 
     // Los enlaces de cada servicio preseleccionan la opción del formulario.
     const form = document.getElementById('formContacto');
