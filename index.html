@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Architect · Software, páginas web y proyectos de grado</title>
+  <meta name="description" content="Edwin y Daniela, desde Santa Marta y Valledupar: páginas web a la medida, Núcleo (punto de venta e inventario) y acompañamiento técnico en proyectos de grado para toda Colombia.">
+  <meta name="theme-color" content="#0a0e14">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Architect · Soluciones tecnológicas">
+  <meta property="og:description" content="Páginas web a la medida, Núcleo (punto de venta e inventario) y acompañamiento técnico en proyectos de grado.">
+  <meta property="og:image" content="https://edwincalderondev-rgb.github.io/the-architect-servicios/assets/img/og-the-architect.jpg">
+  <meta property="og:url" content="https://edwincalderondev-rgb.github.io/the-architect-servicios/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/chat-kb.js" defer></script>
+  <script src="assets/js/chat.js" defer></script>
+</head>
+<body>
+  <a class="sr-only" href="#servicios">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Principal">
+      <a class="brand" href="#inicio" aria-label="The Architect, inicio">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <defs><linearGradient id="gA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ddc97"/><stop offset="1" stop-color="#4f8cff"/></linearGradient></defs>
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="#111823" stroke="#233044"/>
+          <path d="M9 30 20 9l11 21M13.5 22h13" fill="none" stroke="url(#gA)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="9" r="2.4" fill="#f2b35b"/><circle cx="9" cy="30" r="2" fill="#3ddc97"/><circle cx="31" cy="30" r="2" fill="#4f8cff"/>
+        </svg>
+        <span class="brand-name">The Architect<small>Soluciones tecnológicas</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="menu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nucleo">Núcleo</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li><a class="btn btn-primary" href="#contacto">Cotiza gratis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero-media" aria-hidden="true">
+        <video data-autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-estudio-poster.webp">
+          <source src="assets/video/hero-estudio.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <div class="hero-inner">
+          <p class="eyebrow">Santa Marta · Valledupar · toda Colombia</p>
+          <h1>Entendemos tu reto y <em>construimos la solución</em> contigo.</h1>
+          <p class="hero-lead">Somos Edwin y Daniela. Hacemos páginas web a la medida, software para tu negocio y acompañamiento técnico en proyectos de grado, con atención remota o presencial.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12Z"/></svg>
+              Cuéntanos tu proyecto
+            </a>
+            <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+          </div>
+          <ul class="hero-facts">
+            <li><b>+11 años</b> en tecnología</li>
+            <li>Software registrado ante la <b>DNDA</b></li>
+            <li><b>Núcleo</b> en uso en un negocio real</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Servicios</p>
+          <h2>Tres formas de llevar tu idea a algo que funciona</h2>
+          <p>Primero entendemos el problema; después elegimos la tecnología. Cada proyecto se diseña para quien lo va a usar.</p>
+        </div>
+        <div class="services">
+          <article class="service reveal">
+            <div class="service-media"><img src="assets/img/servicio-web.webp" alt="Portátil y celular con un sitio web de diseño limpio, junto a un cuaderno con bocetos" width="1280" height="720" loading="lazy"></div>
+            <div class="service-body">
+              <p class="service-tag">Para tu empresa o marca</p>
+              <h3>Una web que te represente</h3>
+              <p>Presenta tu negocio con una página de diseño propio, rápida y adaptada al celular.</p>
+              <ul>
+                <li>Diseño a la medida, sin plantillas</li>
+                <li>Varios idiomas y un asistente que responde preguntas</li>
+                <li>Fotos y video profesionales para mostrar lo que haces</li>
+                <li>Formularios que llegan a tu WhatsApp o correo</li>
+              </ul>
+              <a class="link" href="#contacto" data-servicio="Página web">Quiero mi página →</a>
+            </div>
+          </article>
+          <article class="service reveal">
+            <div class="service-media"><img src="assets/img/nucleo-tienda-poster.webp" alt="Lector de código de barras escaneando un producto junto a un portátil con gráficas de inventario" width="1280" height="720" loading="lazy"></div>
+            <div class="service-body">
+              <p class="service-tag">Para tiendas y bodegas</p>
+              <h3>Núcleo: organiza tu negocio</h3>
+              <p>Vende y controla tu inventario sin depender de internet. Ya funciona en un negocio real, donde digitalizó más de 550 productos.</p>
+              <ul>
+                <li>Ventas con lector de código de barras</li>
+                <li>Costo real por lotes, crédito y cartera</li>
+                <li>Reportes de ganancias e impresión de tiquetes</li>
+              </ul>
+              <a class="link" href="#nucleo">Conoce Núcleo →</a>
+            </div>
+          </article>
+          <article class="service reveal">
+            <div class="service-media"><img src="assets/img/servicio-tesis.webp" alt="Escritorio de estudiante con un portátil con gráficas, borrador de tesis con marcadores y un birrete" width="1280" height="720" loading="lazy"></div>
+            <div class="service-body">
+              <p class="service-tag">Para estudiantes</p>
+              <h3>Tu proyecto de grado, con respaldo técnico</h3>
+              <p>Te acompañamos en la parte técnica de tu proyecto. Tú eres el autor; nosotros aportamos la ingeniería. No vendemos tesis.</p>
+              <ul>
+                <li>Software, aplicación o prototipo del proyecto</li>
+                <li>Análisis de datos y estadística (Minitab, Excel, Power BI)</li>
+                <li>Sitio web y video para presentar tu trabajo</li>
+                <li>Preparación de la sustentación</li>
+              </ul>
+              <a class="link" href="#contacto" data-servicio="Proyecto de grado">Hablemos de tu proyecto →</a>
+            </div>
+          </article>
+        </div>
+        <div class="extras reveal">
+          <p class="extras-title">También te ayudamos con</p>
+          <div class="extra">
+            <h3>Calidad y sistemas de gestión</h3>
+            <p>Documentación, indicadores y preparación de auditorías internas en ISO 9001, 14001 y 45001.</p>
+          </div>
+          <div class="extra">
+            <h3>Datos y tableros</h3>
+            <p>Análisis estadístico, control de procesos y tableros en Power BI para decidir con datos.</p>
+          </div>
+          <div class="extra">
+            <h3>Tecnología y ciberseguridad</h3>
+            <p>Diagnóstico de tu plataforma, endurecimiento de servidores, redes y respuesta a incidentes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Núcleo -->
+    <section class="section section--alt" id="nucleo">
+      <div class="container nucleo">
+        <div class="nucleo-media reveal">
+          <video data-autoplay muted loop playsinline preload="none" poster="assets/img/nucleo-tienda-poster.webp" aria-label="Video: escaneo de un producto en el mostrador de una tienda">
+            <source src="assets/video/nucleo-tienda.mp4" type="video/mp4">
+          </video>
+          <div class="nucleo-badge"><b>+550 productos</b>digitalizados en un negocio que lo llevaba todo a mano</div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Núcleo · punto de venta e inventario</p>
+          <h2>El control de tu tienda, en un solo programa</h2>
+          <p>Núcleo es un programa de escritorio para Windows, hecho por nosotros y probado a diario en un negocio mayorista y detallista. Se instala con un asistente sencillo y funciona aunque se caiga el internet.</p>
+          <div class="features">
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6v12M7 6v12M10 6v12M14 6v12M17 6v12M20 6v12"/></svg>
+              <h4>Lector de código de barras</h4>
+              <p>Escaneas y el producto entra a la venta al instante.</p>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4Z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+              <h4>Lotes con costo real</h4>
+              <p>Lo primero que entra es lo primero que sale (FIFO).</p>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5h8v2"/></svg>
+              <h4>Unidad, paquete o caja</h4>
+              <p>Cada presentación con su propio precio.</p>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/></svg>
+              <h4>Crédito y cartera</h4>
+              <p>Ventas fiadas, abonos y lo que debe cada cliente.</p>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+              <h4>Reportes de ganancias</h4>
+              <p>Ingresos, costos y utilidad, con exportación a PDF.</p>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/></svg>
+              <h4>Tiquete y cajón</h4>
+              <p>Impresora térmica de 80 mm y apertura del cajón.</p>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+              <h4>Respaldos automáticos</h4>
+              <p>Una copia diaria de tu información, sin que lo pienses.</p>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              <h4>Carga desde Excel</h4>
+              <p>Sube tus productos y clientes sin digitarlos uno a uno.</p>
+            </div>
+          </div>
+          <p class="note">Y se adapta a tu negocio. Funciones que podemos desarrollar a la medida:</p>
+          <ul class="roadmap">
+            <li>Facturación electrónica DIAN</li>
+            <li>Catálogo por WhatsApp</li>
+            <li>Usuarios por empleado</li>
+            <li>Pagos con Nequi y Daviplata</li>
+            <li>Varias sedes</li>
+          </ul>
+          <a class="btn btn-primary" href="#contacto" data-servicio="Núcleo (punto de venta)">Pide una demostración</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Proyectos</p>
+          <h2>Trabajo real, en producción</h2>
+          <p>Algunos de los sistemas que hemos diseñado, construido y puesto a funcionar.</p>
+        </div>
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project-media"><img src="assets/img/proyecto-petroil.webp" alt="Página de inicio del sitio web de Petroil S.A." width="1200" height="667" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta">Sitio corporativo · 2026</p>
+              <h3>Petroil S.A. — refinería de petróleo</h3>
+              <p>Sitio propio que reemplazó un WordPress obsoleto: tres idiomas, asistente virtual sin costo de IA, fichas de producto, formularios de contacto y PQRSF, y una configuración de seguridad revisada a fondo.</p>
+              <ul class="chips"><li>HTML · CSS · JS</li><li>ES · EN · PT</li><li>Asistente virtual</li><li>Seguridad</li></ul>
+              <a class="link" href="https://petroilsa.com/" target="_blank" rel="noopener">Visitar petroilsa.com ↗</a>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-media"><img src="assets/img/proyecto-guardianes.webp" alt="Página de inicio del sitio de la tesis Guardianes del Viento" width="1200" height="667" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta">Sitio de tesis de maestría · 2026</p>
+              <h3>Guardianes del Viento</h3>
+              <p>Sitio para presentar una tesis sobre una cooperativa wayuu y los parques eólicos de La Guajira: mapa de viento animado, asistente «Alisio» que responde sobre el proyecto y tráiler en video.</p>
+              <ul class="chips"><li>WebGL</li><li>Asistente</li><li>Video</li><li>GitHub Pages</li></ul>
+              <a class="link" href="https://edwincalderondev-rgb.github.io/Guardianes-del-viento/" target="_blank" rel="noopener">Ver el sitio ↗</a>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-media">
+              <div class="project-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4M6 13V9M9 13V8M12 13v-3M15 13V7M18 13v-5"/></svg></div>
+            </div>
+            <div class="project-body">
+              <p class="project-meta">Software de escritorio · 2026</p>
+              <h3>Núcleo — punto de venta e inventario</h3>
+              <p>En uso diario en un negocio mayorista y detallista: más de 550 productos digitalizados, costo FIFO por lote, impresión térmica y cartera de clientes. Corrigió un error contable que inflaba las ganancias en los pagos parciales.</p>
+              <ul class="chips"><li>Electron</li><li>SQLite</li><li>Impresión térmica</li><li>Excel</li></ul>
+            </div>
+          </article>
+          <article class="project reveal">
+            <div class="project-media">
+              <div class="project-art"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.6-9.3-9.3C1.4 8.2 3.6 4.5 7.3 4.5c2 0 3.4 1.1 4.7 2.8 1.3-1.7 2.7-2.8 4.7-2.8 3.7 0 5.9 3.7 4.6 7.2C19.5 16.4 12 21 12 21Z"/><path d="M3 12h4l2-3 3 6 2-3h7"/></svg></div>
+            </div>
+            <div class="project-body">
+              <p class="project-meta">Plataforma web · 2021 – 2023</p>
+              <h3>Plataforma de salud mental (proyecto BPIN)</h3>
+              <p>Coordinación del desarrollo de una plataforma de tamizaje para un proyecto de investigación con recursos públicos: más de 5.000 personas atendidas, informes automáticos y registro ante la Dirección Nacional de Derecho de Autor.</p>
+              <ul class="chips"><li>Angular</li><li>Laravel</li><li>MySQL</li><li>Linux</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="section section--alt" id="equipo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Equipo</p>
+          <h2>Dos personas, todo el proceso</h2>
+          <p>Hablas directamente con quienes hacen el trabajo: sin intermediarios ni call center.</p>
+        </div>
+        <div class="team">
+          <article class="member reveal">
+            <div class="member-media"><img src="assets/img/equipo-codigo.webp" alt="Ingeniero de espaldas dibujando un diagrama de arquitectura junto a dos monitores con código" width="1280" height="720" loading="lazy"></div>
+            <div class="member-body">
+              <img class="member-photo" src="assets/img/retrato-edwin.webp" alt="Retrato de Edwin Calderón" width="280" height="280" loading="lazy">
+              <p class="member-role">Código, arquitectura y seguridad</p>
+              <h3>Edwin Calderón</h3>
+              <p>Ingeniero de sistemas y estudiante de ingeniería industrial, con más de 11 años construyendo soluciones de punta a punta: diseño, desarrollo, bases de datos, despliegue y seguridad. Ha liderado equipos de hasta 50 personas, fundó VR Zone —el primer centro de realidad virtual arcade de Santa Marta— y hoy dirige los frentes de tecnología de una refinería.</p>
+              <blockquote>«Diagnostico el problema como ingeniero industrial y construyo la solución como ingeniero de sistemas.»</blockquote>
+              <a class="member-link" href="https://edwincalderondev-rgb.github.io/HDV/" target="_blank" rel="noopener">Ver su hoja de vida ↗</a>
+            </div>
+          </article>
+          <article class="member reveal">
+            <div class="member-media"><img src="assets/img/equipo-contenido.webp" alt="Manos ajustando una cámara en un estudio con luces, celular en estabilizador y portátil con línea de edición de video" width="1280" height="720" loading="lazy"></div>
+            <div class="member-body">
+              <img class="member-photo" src="assets/img/retrato-daniela.webp" alt="Retrato de Daniela Rico" width="280" height="280" loading="lazy">
+              <p class="member-role">Contenido, clientes, calidad y datos</p>
+              <h3>Daniela Rico</h3>
+              <p>Hace las fotos y los videos de cada proyecto, maneja las redes sociales y es tu primer contacto: escucha lo que necesitas y te acompaña hasta la entrega. Es ingeniera industrial de la Universidad del Magdalena, auditora interna en sistemas de gestión integrados HSEQ certificada por SGS Academy y coautora de una investigación sobre calidad y Six Sigma publicada por Springer Nature.</p>
+              <ul class="chips member-chips"><li>Foto y video</li><li>Redes sociales</li><li>Estadística · Minitab</li><li>Power BI</li><li>ISO 9001 · 14001 · 45001</li></ul>
+              <a class="member-link" href="https://edwincalderondev-rgb.github.io/HDV_Daniela_Rico/" target="_blank" rel="noopener">Ver su hoja de vida ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2>De la idea a la entrega, sin sorpresas</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal"><h3>Conversamos</h3><p>Entendemos tu problema y tu negocio antes de hablar de tecnología.</p></li>
+          <li class="step reveal"><h3>Diseñamos</h3><p>Te proponemos el alcance, el plan y la cotización por escrito.</p></li>
+          <li class="step reveal"><h3>Construimos</h3><p>Ves avances reales durante el proceso y opinas en cada etapa.</p></li>
+          <li class="step reveal"><h3>Entregamos y acompañamos</h3><p>Publicamos, te capacitamos y seguimos contigo después.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section section--alt" id="contacto">
+      <div class="container contact">
+        <div class="reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2>Cuéntanos tu proyecto</h2>
+          <p class="note">La cotización es gratis y sin compromiso. El precio y el tiempo dependen del alcance de cada proyecto; te respondemos con una propuesta clara.</p>
+          <ul class="contact-list">
+            <li><a href="https://wa.me/573014099377" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.1-.8Z"/></svg>
+              <span>WhatsApp<small>+57 301 409 9377</small></span></a></li>
+            <li><a href="mailto:edwinaguilera777@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span>Correo<small>edwinaguilera777@gmail.com</small></span></a></li>
+          </ul>
+        </div>
+        <form class="contact-card form reveal" id="formContacto" novalidate>
+          <label>Tu nombre
+            <input name="nombre" autocomplete="name" required maxlength="80">
+          </label>
+          <label>¿Qué necesitas?
+            <select name="servicio" required>
+              <option value="Página web">Una página web</option>
+              <option value="Núcleo (punto de venta)">Núcleo, punto de venta e inventario</option>
+              <option value="Proyecto de grado">Acompañamiento en proyecto de grado</option>
+              <option value="Calidad y sistemas de gestión ISO">Calidad y sistemas de gestión ISO</option>
+              <option value="Consultoría en tecnología">Consultoría o algo más</option>
+            </select>
+          </label>
+          <label>Cuéntanos un poco
+            <textarea name="mensaje" required maxlength="1200" placeholder="Qué quieres lograr, para cuándo, y cualquier detalle que nos ayude."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12Z"/></svg>
+            Enviar por WhatsApp
+          </button>
+          <p class="form-note">Se abre WhatsApp con tu mensaje ya escrito; solo tienes que pulsar Enviar. Este sitio no guarda tus datos.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="signature">The Architect · Soluciones tecnológicas</p>
+      <p>Edwin Calderón · Daniela Rico — Santa Marta y Valledupar, Colombia</p>
+      <p><a href="https://edwincalderondev-rgb.github.io/HDV/" target="_blank" rel="noopener">Hoja de vida de Edwin</a> · <a href="https://edwincalderondev-rgb.github.io/HDV_Daniela_Rico/" target="_blank" rel="noopener">Hoja de vida de Daniela</a></p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/573014099377?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20cotizar%20un%20proyecto." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.1-.8Z"/></svg>
+  </a>
+
+  <button class="chat-toggle" type="button" aria-expanded="false" aria-controls="chatPanel">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/><path d="M8 9h8M8 13h5"/></svg>
+    <span>¿Preguntas?</span>
+  </button>
+  <section class="chat-panel" id="chatPanel" role="dialog" aria-label="Asistente de The Architect" hidden>
+    <header class="chat-head">
+      <div class="chat-avatar">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M9 30 20 9l11 21M13.5 22h13" fill="none" stroke="#3ddc97" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="9" r="2.6" fill="#f2b35b"/></svg>
+      </div>
+      <div>
+        <h2>Asistente de The Architect</h2>
+        <p>Responde al instante</p>
+      </div>
+      <button class="chat-close" type="button" aria-label="Cerrar el asistente">✕</button>
+    </header>
+    <div class="chat-log" aria-live="polite"></div>
+    <form class="chat-form">
+      <label class="sr-only" for="chatInput">Escribe tu pregunta</label>
+      <input id="chatInput" autocomplete="off" maxlength="300" placeholder="Escribe tu pregunta…">
+      <button type="submit" aria-label="Enviar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg></button>
+    </form>
+  </section>
+</body>
+</html>
